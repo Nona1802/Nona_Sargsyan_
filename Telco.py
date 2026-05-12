@@ -7,8 +7,7 @@ import itertools
 import scikit_posthocs as sp
 from statsmodels.stats.multitest import multipletests
 
-
-df = pd.read_csv(r"C:\Users\Lenovo\Desktop\Course4\Diploma\WA_Fn-UseC_-Telco-Customer-Churn.csv")
+df = pd.read_csv("WA_Fn-UseC_-Telco-Customer-Churn.csv")
 
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
 
