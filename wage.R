@@ -5,7 +5,7 @@ library(FSA)
 library(ARTool)
 library(emmeans)
 
-DF <- Wage
+DF <- read.csv("Wage.csv")
 
 DF <- DF %>% 
   mutate(period = ifelse(year <= 2006, "2003-2006", "2007-2009"))  
